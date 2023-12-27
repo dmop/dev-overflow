@@ -239,9 +239,9 @@ const Question = ({ mongoUserId }: Props) => {
           disabled={form.formState.isSubmitting}
         >
           {form.formState.isSubmitting ? (
-            <>{type === "edit" ? "Editing..." : "Posting"}</>
+            <>{type === "create" ? "Posting" : "Editing..."}</>
           ) : (
-            <>{type === "edit" ? "Edit Question" : "Ask a question"}</>
+            <>{type === "create" ? "Ask a question" : "Edit Question"}</>
           )}
         </Button>
       </form>
